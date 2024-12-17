@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reopen & pickup delay all essentials | Macro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <title>Copy Text Example</title>
+  <link rel="stylesheet" href="macro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="https://meeshosx.kapturecrm.com/nui/login">Kapture</a></li>
+          <li><a href="https://admin.meeshosupply.com/login?redirect=https://admin.meeshosupply.com/suppliers">Admin Panel</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1KHY0_8H5O7LecoSD_a94Yui8g1SgBTk9OeNyEFBlkQo/edit?gid=0#gid=0">Allocation sheet</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1-wt0OU-UuLa44DFox8kJxs47E-K1jC2zJR-X-31TzFA/edit?gid=2065498531#gid=2065498531">Tracker</a></li>
+          <li><a href="https://docs.google.com/forms/d/1voLjJ34qhkgAyPCulWJhC5pPZqUaut0kWppjd1aH_V0/viewform?edit_requested=true">Form</a></li>
+          <li><a href="https://docs.google.com/document/d/10hhojGcIHkULeK8mEbHPs5ULlEmNNCTiJvoIEr4n1vI/edit?pli=1">Ticket Raising Path</a></li>
+        </ul>
+
+        <input type="text" id="searchBox" placeholder="Type to search...">
+        <button class="btn btn-primary" onclick="searchText()"><i class="fa fa-search"></i></button>
+      </nav>
+
+    <div class="tag">
+        <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">CANCELED</p>
+    <div class="text-block">
+    <p class="memo">
+        Dear Supplier,
+        <br>
+        Greetings from Meesho.
+        <br>
+        <br>
+        We apologize for the inconvenience caused.
+        <br>
+        <br>
+        The current status of the Order ID: xxx is canceled, hence, we are resolving the ticket.
+        <br>
+        <br>
+        Thank you for reaching out to us.
+        <br>
+        <br>
+        Regards,
+        <br>
+        Team Meesho
+    </p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We apologize for the inconvenience caused.
+<br>
+The current status of the Order ID: xxx is canceled, hence, we are resolving the ticket.
+<br>
+Thank you for reaching out to us.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy </button> 
+    </div>
+    </div>
+
+    <div class="tag">
+        <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">ORDERED</p>
+    <div class="text-block">
+    <p class="memo">
+        Dear Supplier,
+        <br>
+        Greetings from Meesho.
+        <br>
+        <br>
+        We shall arrange the reattempt of the shipment for Order ID: xxx in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+        <br>
+        <br>
+        We appreciate your patience.
+        <br>
+        <br>
+        Regards,
+        <br>
+        Team Meesho
+    </p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We shall arrange the reattempt of the shipment for Order ID: xxx in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+<br>
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+      <button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+    </div>
+    </div>
+
+    <div class="tag">
+        <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">PICKUP DONE</p>
+    <div class="text-block">
+    <p class="memo">
+        Dear Supplier,
+        <br>
+        Greetings from Meesho.
+        <br>
+        <br>
+        Please be informed that the pickup for the below-mentioned Order ID: XXX has already been done, hence, we are resolving this ticket.
+        <br>
+        <br>
+        Thank you for reaching out to us.
+        <br>
+        <br>
+        Regards,
+        <br>
+        Team Meesho
+    </p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+Please be informed that the pickup for the below-mentioned Order ID: XXX has already been done, hence, we are resolving this ticket.
+<br>
+Thank you for reaching out to us.
+<br>
+Regards,
+Team Meesho
+</p>
+      <button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+    </div>
+    </div>
+
+    <div class="tag">
+      <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">ORDER, PICK UP, CANCELED</p>
+  <div class="text-block">
+  <p class="memo">
+      Dear Supplier,
+      <br>
+      Greetings from Meesho.
+      <br>
+      <br>
+      We shall arrange the reattempt of the shipment for the Order ID: XXX in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+      <br>
+      <br>
+      The Order ID: XXX has already been picked up.
+      <br>
+      <br>
+      The Order ID: XXX has already been canceled.
+      <br>
+      <br>
+      We appreciate your patience.
+      <br>
+      <br>
+      Regards,
+      <br>
+      Team Meesho
+  </p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We shall arrange the reattempt of the shipment for the Order ID: XXX in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+<br>
+The Order ID: XXX has already been picked up.
+<br>
+The Order ID: XXX has already been canceled.
+<br>
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+    <button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+  </div>
+    </div>
+
+  <div class="tag">
+    <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">PICK UP AND CANCELED</p>
+<div class="text-block">
+<p class="memo">
+    Dear Supplier,
+    <br>
+    Greetings from Meesho.
+    <br>
+    <br>
+    Please be informed that the pickup for the below-mentioned order has already been done, hence, we are resolving this ticket.
+    <br>
+    <br>
+    Order ID: XXX
+    <br>
+    <br>
+    The Order ID: XXX has already been canceled.
+    <br>
+    <br>
+    Thank you for reaching out to us.
+    <br>
+    <br>
+    Regards,
+    <br>
+    Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+Please be informed that the pickup for the below-mentioned order has already been done, hence, we are resolving this ticket.
+<br>
+Order ID: XXX
+<br>
+The Order ID: XXX has already been canceled.
+<br>
+Thank you for reaching out to us.
+<br>
+Regards,
+Team Meesho
+</p>
+  <button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">ORDERED AND PICKED UP</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  We shall arrange the reattempt of the shipment for the Order ID: XXX in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+  <br>
+  <br>
+  The Order ID: xxx has already been canceled.
+  <br>
+  <br>
+  We appreciate your patience.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We shall arrange the reattempt of the shipment for the Order ID: XXX in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+<br>
+The Order ID: xxx has already been canceled.
+<br>
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">PARTIAL PICKUP</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  We would like to inform you that we have partially completed the pickup for the given Order ID: XXX. Kindly hand over the remaining manifested shipments to our trusted logistics partner during their next pickup attempt, which is scheduled in the next 24 hours.
+  <br>
+  <br>
+  We appreciate your patience.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We would like to inform you that we have partially completed the pickup for the given Order ID: XXX. Kindly hand over the remaining manifested shipments to our trusted logistics partner during their next pickup attempt, which is scheduled in the next 24 hours.
+<br>
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">1) Status mismatch between 3p portal and
+    supplier panel</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  We shall arrange the reattempt of the shipment for Order ID: xxx in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+  <br>
+  <br>
+  We appreciate your patience.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We shall arrange the reattempt of the shipment for Order ID: xxx in the next 24 hours. Please keep the shipments ready. We apologize for the inconvenience caused.
+<br>
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">2) Status mismatch between 3p portal and supplier panel <br> and canceled</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  We will check the status of the pickup and share an update within 24 hours.
+  <br>
+  <br>
+  Order ID:
+  <br>
+  <br>
+  The Order ID: XXX has already been canceled.
+  <br>
+  <br>
+  We appreciate your patience.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We will check the status of the pickup and share an update within 24 hours.
+<br>
+Order ID:
+<br>
+The Order ID: XXX has already been canceled.
+<br>
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">CALLING LINES</p>
+<div class="text-block">
+<p class="memo">
+  1) As per our telephonic conversation on your registered mobile
+  number,
+  <br>
+  <br>
+  2) We have tried to call you on your registered mobile number but the
+  call went unanswered.
+  <br>
+  <br>
+  3) We have tried to call you on your registered mobile number but the
+  number was busy.
+  <br>
+  <br>
+  4) We have tried to call you on your registered mobile number but the
+  incoming call facility was not available there.
+  <br>
+  <br>
+  5) We have tried to call you on your registered mobile number but the
+  number was switched off.
+  <br>
+  <br>
+  6) We have tried to call you on your registered mobile number but the
+  number was temporarily not in service.
+  <br>
+  <br>
+  7) We have tried to call you on your registered mobile number, but the
+  number was not connected.
+  <br>
+  <br>
+  8) We have tried to call you on your registered mobile number but no
+  response from the supplier end so gave vervious and then I
+  disconnected the call
+  <br>
+  <br>
+  9) We are unable to connect with any other number 9057555518 except
+  the registered number.
+  <br>
+  <br>
+  10) We have tried to provide you with the resolution on your registered mobile
+  number, but the call has been disconnected from your side in between the
+  conversation.
+  <br>
+  <br>
+  We apologize for the inconvenience to you.
+</p>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">SHIPMENT READY BUT NOT PICKUP</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  As per our 3PL update, the pick-up was attempted and found that the shipment for Order ID: xxxx was not ready. We will reattempt the pickup within 24 hours. Kindly keep the shipment ready.
+  <br>
+  <br>
+  We appreciate your patience.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+As per our 3PL update, the pick-up was attempted and found that the shipment for Order ID: xxxx was not ready. We will reattempt the pickup within 24 hours. Kindly keep the shipment ready
+<br>
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">ORDER DETAILS NOT SHARED</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  As checked, you have shared a video/image containing order IDs. To proceed with the validations, please provide the sub-order numbers in an Excel file.
+  <br>
+  <br>
+  Please note that the ticket will remain open for 48 hours, awaiting your response.
+  <br>
+  We request your kind cooperation.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+As checked, you have shared a video/image containing order IDs. To proceed with the validations, please provide the sub-order numbers in an Excel file.
+<br>
+Please note that the ticket will remain open for 48 hours, awaiting your response.
+We appreciate your patience.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">OTHER CONCERN</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  Please raise a new ticket for the same concern below steps:
+  <br>
+  <br>
+  Further, we request you to kindly raise a ticket for the same concern in the future by the following path: Supplier Panel-Support-Account-Please choose the relevant FAQ as per your concern
+  <br>
+  <br>
+  Further, we request you to kindly raise a ticket for the same concern in the future by the following path: Supplier Panel-Support-Cataloging & Pricing-Please choose the relevant FAQ as per your concern
+  <br>
+  <br>
+  Further, we request you to kindly raise a ticket for the same concern in the future by the following path: SupplierPanel-Support-Payments-Choose the relevant FAQ as per your concern
+  <br>
+  <br>
+  Further, we request you to kindly raise a ticket for the same concern in the future by the following path: Supplier Panel-Support-Help-Advertisements-Please choose the relevant FAQ as per your concern
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+  <br>
+  <br>
+  We would like to inform you that we are not authorized to provide any 3PL contact number
+  <br>
+  <br>
+  We would like to inform you that we do not share any FE contact number
+  <br>
+  <br>
+  Order status change after sending the macro
+  <br>
+  <br>
+  Order status updated before disposing of the ticket
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+Please raise a new ticket for the same concern below steps:
+<br>
+Further, we request you to kindly raise a ticket for the same concern in the future by the following path: Supplier Panel-Support-Account-Please choose the relevant FAQ as per your concern
+<br>
+Further, we request you to kindly raise a ticket for the same concern in the future by the following path: Supplier Panel-Support-Cataloging & Pricing-Please choose the relevant FAQ as per your concern
+<br>
+Further, we request you to kindly raise a ticket for the same concern in the future by the following path: SupplierPanel-Support-Payments-Choose the relevant FAQ as per your concern
+<br>
+Further, we request you to kindly raise a ticket for the same concern in the future by the following path: Supplier Panel-Support-Help-Advertisements-Please choose the relevant FAQ as per your concern
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">NSZ - Non Serviceable Zone</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  The Order ID: XXX has been canceled as the pincode is nonserviceable. We regret the inconvenience caused.
+  <br>
+  <br>
+  We request your kind understanding.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+The Order ID: XXX has been canceled as the pincode is nonserviceable. We regret the inconvenience caused.
+<br>
+We request your kind understanding.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">Fragile Item</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  We apologize for the inconvenience to you.
+  <br>
+  <br>
+  The Order ID: xxx has been canceled as the shipment had fragile items. We regret the inconvenience caused.
+  <br>
+  <br>
+  We request your kind understanding.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We apologize for the inconvenience to you.
+<br>
+The Order ID: xxx has been canceled as the shipment had fragile items. We regret the inconvenience caused.  
+<br>
+We request your kind understanding.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">Liquid Items</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  We apologize for the inconvenience to you.
+  <br>
+  <br>
+  The Order ID: XXX has been canceled as the shipment had liquid items. We regret the inconvenience.
+  <br>
+  <br>
+  We request your kind understanding.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We apologize for the inconvenience to you.
+<br>
+The Order ID: XXX has been canceled as the shipment had liquid items. We regret the inconvenience.  
+<br>
+We request your kind understanding.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+<div class="tag">
+  <p style="font-weight: bolder; font-size: 24px; margin-left: 15px;">Size Issue</p>
+<div class="text-block">
+<p class="memo">
+  Dear Supplier,
+  <br>
+  Greetings from Meesho.
+  <br>
+  <br>
+  We apologize for the inconvenience to you.
+  <br>
+  <br>
+  The Order ID: XXX has been canceled due to the size issue of the shipment. We regret the inconvenience caused.
+  <br>
+  <br>
+  We request your kind understanding.
+  <br>
+  <br>
+  Regards,
+  <br>
+  Team Meesho
+</p>
+<p class="text" hidden>
+Dear Supplier,
+Greetings from Meesho.
+<br>
+We apologize for the inconvenience to you.
+<br>
+The Order ID: XXX has been canceled due to the size issue of the shipment. We regret the inconvenience caused.  
+<br>
+We request your kind understanding.
+<br>
+Regards,
+Team Meesho
+</p>
+<button class="copy-btn" onclick="copyText(this)"><i class='fa fa-copy'></i> Copy</button>
+</div>
+</div>
+
+
+
+
+    <footer>
+      <div class="credit">Created by <span>Aritra Bera</span> | all rights reserved!</div>
+    </footer>
+
+      <a class="float-translate" id="openPopup" href="https://quillbot.com/translate">
+        <img width="48" height="48" src="https://img.icons8.com/color/48/language.png" alt="language"/>
+      </a>
+  
+      <a class="float-note"
+        href="https://edge24.github.io/note/">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-96c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7-14.3 32-32 32L96 448c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 64z"/></svg>
+      </a>
+
+  <script>
+    function copyText(button) {
+  const textToCopy = button.previousElementSibling.textContent;
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    alert("Text copied: " + textToCopy);
+  }).catch((err) => {
+    console.error("Failed to copy text: ", err);
+  });
+}
+  </script>
+
+<script>
+  function searchText() {
+      const searchTerm = document.getElementById("searchBox").value.trim();
+      if (!searchTerm) return;
+
+      clearHighlights(); // Clear previous highlights
+
+      let firstHighlightScrolled = false; // Flag to scroll to the first match
+
+      // Traverse the DOM and highlight matches
+      const walkDOM = (node) => {
+          if (node.nodeType === Node.TEXT_NODE) {
+              const text = node.nodeValue;
+              const regex = new RegExp(searchTerm, "gi"); // Case-insensitive search
+
+              if (regex.test(text)) {
+                  const parent = node.parentNode;
+
+                  // Split the text into parts around the match
+                  const newHTML = text.replace(regex, (match) => {
+                      return `<span class="highlight">${match}</span>`;
+                  });
+
+                  // Replace the text node with the new HTML
+                  const wrapper = document.createElement("span");
+                  wrapper.innerHTML = newHTML;
+                  parent.replaceChild(wrapper, node);
+
+                  // Scroll to the first match
+                  if (!firstHighlightScrolled) {
+                      const firstHighlight = wrapper.querySelector(".highlight");
+                      firstHighlight.scrollIntoView({
+                          behavior: "smooth",
+                          block: "center",
+                      });
+                      firstHighlightScrolled = true;
+                  }
+              }
+          } else if (node.nodeType === Node.ELEMENT_NODE && node.childNodes) {
+              // Skip <script> and <style> tags
+              if (node.tagName !== "SCRIPT" && node.tagName !== "STYLE") {
+                  node.childNodes.forEach(walkDOM);
+              }
+          }
+      };
+
+      walkDOM(document.body); // Start traversal from the body
+
+      // Automatically clear highlights after 2 minutes (120,000 ms)
+      setTimeout(clearHighlights, 120000);
+  }
+
+  function clearHighlights() {
+      // Remove all highlights by restoring original text
+      document.querySelectorAll(".highlight").forEach((highlight) => {
+          const parent = highlight.parentNode;
+          parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+          parent.normalize(); // Combine adjacent text nodes
+      });
+  }
+</script>
+
+<script>
+  function searchText() {
+    const searchTerm = document.getElementById("searchBox").value.trim();
+    if (!searchTerm) return;
+
+    clearHighlights(); // Clear previous highlights
+
+    let firstHighlightFound = false; // Flag to scroll only the first match
+
+    const walkDOM = (node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            const text = node.nodeValue;
+            const matchIndex = text.toLowerCase().indexOf(searchTerm.toLowerCase());
+
+            if (matchIndex !== -1) {
+                const before = text.slice(0, matchIndex);
+                const match = text.slice(matchIndex, matchIndex + searchTerm.length);
+                const after = text.slice(matchIndex + searchTerm.length);
+
+                const highlightSpan = document.createElement("span");
+                highlightSpan.className = "highlight";
+                highlightSpan.textContent = match;
+
+                const parent = node.parentNode;
+                parent.insertBefore(document.createTextNode(before), node);
+                parent.insertBefore(highlightSpan, node);
+                parent.insertBefore(document.createTextNode(after), node);
+                parent.removeChild(node);
+
+                // Scroll to the first match
+                if (!firstHighlightFound) {
+                    highlightSpan.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+                    firstHighlightFound = true; // Ensure only the first match scrolls
+                }
+            }
+        } else if (node.nodeType === Node.ELEMENT_NODE && node.childNodes) {
+            node.childNodes.forEach(walkDOM);
+        }
+    };
+
+    document.querySelectorAll("p").forEach((paragraph) => walkDOM(paragraph));
+
+    // Automatically clear highlights after 2 minutes (120,000 milliseconds)
+    setTimeout(clearHighlights, 120000);
+}
+
+function clearHighlights() {
+    const highlights = document.querySelectorAll(".highlight");
+    highlights.forEach((span) => {
+        const parent = span.parentNode;
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+    });
+}
+
+</script>
+
+</body>
+</html>
