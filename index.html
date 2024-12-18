@@ -922,6 +922,99 @@ function clearHighlights() {
 </script>
 
 <script>
+        let currentIndex = -1; // Tracks the current highlighted element
+        let highlights = []; // Array to store all highlighted elements
+
+        function searchText() {
+            const searchTerm = document.getElementById("searchBox").value.trim();
+            if (!searchTerm) return;
+
+            clearHighlights(); // Clear previous highlights
+
+            const regex = new RegExp(searchTerm, "gi"); // Case-insensitive search
+            highlights = []; // Reset the highlights array
+
+            const walkDOM = (node) => {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    const text = node.nodeValue;
+                    if (regex.test(text)) {
+                        const parent = node.parentNode;
+
+                        // Replace matches with highlighted spans
+                        const highlightedHTML = text.replace(regex, (match) => {
+                            return `<span class="highlight">${match}</span>`;
+                        });
+
+                        const wrapper = document.createElement("span");
+                        wrapper.innerHTML = highlightedHTML;
+                        parent.replaceChild(wrapper, node);
+
+                        // Add each highlight to the highlights array
+                        wrapper.querySelectorAll(".highlight").forEach((el) => highlights.push(el));
+                    }
+                } else if (node.nodeType === Node.ELEMENT_NODE && node.childNodes) {
+                    if (node.tagName !== "SCRIPT" && node.tagName !== "STYLE") {
+                        node.childNodes.forEach(walkDOM);
+                    }
+                }
+            };
+
+            walkDOM(document.body); // Start DOM traversal
+
+            if (highlights.length > 0) {
+                currentIndex = 0; // Focus on the first match
+                scrollToHighlight();
+            }
+        }
+
+        function scrollToHighlight() {
+            if (highlights.length > 0) {
+                // Remove focus from all highlights
+                highlights.forEach((el) => el.classList.remove("current-highlight"));
+
+                // Focus on the current highlight
+                const current = highlights[currentIndex];
+                current.classList.add("current-highlight");
+                current.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+        }
+
+        function navigateHighlights(direction) {
+            if (highlights.length === 0) return;
+
+            // Update the current index based on navigation direction
+            if (direction === "next") {
+                currentIndex = (currentIndex + 1) % highlights.length;
+            } else if (direction === "prev") {
+                currentIndex = (currentIndex - 1 + highlights.length) % highlights.length;
+            }
+
+            scrollToHighlight();
+        }
+
+        function clearHighlights() {
+            document.querySelectorAll(".highlight").forEach((highlight) => {
+                const parent = highlight.parentNode;
+                parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+                parent.normalize(); // Combine adjacent text nodes
+            });
+            highlights = [];
+            currentIndex = -1;
+        }
+
+        // Keyboard controls
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" && document.activeElement.id === "searchBox") {
+                searchText(); // Trigger search on Enter key
+            } else if (e.key === "ArrowDown") {
+                navigateHighlights("next"); // Go to the next highlight
+            } else if (e.key === "ArrowUp") {
+                navigateHighlights("prev"); // Go to the previous highlight
+            }
+        });
+    </script>
+
+<script>
   // Automatically set target="_blank" on all <a> tags
   document.querySelectorAll("a").forEach((link) => {
       link.setAttribute("target", "_blank");
