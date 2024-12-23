@@ -224,18 +224,19 @@ body {
 	height:65px;
 	bottom:145px;
 	right:40px;
-  padding: 4px;
-  color: white;
-  background-color: #9292926a;
-  border: 1px solid #8787879c;
+  	padding: 4px;
+  	color: white;
+  	background-color: #9292926a;
+  	border: 1px solid #8787879c;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
 }
 
-.float-translate img{
+.float-translate i{
   margin-top: 10px;
   margin-left: 1.5px;
+  font-size: 45px;
 }
 
 .float-translate:hover{
