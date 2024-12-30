@@ -184,6 +184,40 @@ body {
     margin-left: 19px;
   }
 
+  .tag span{
+    color: cyan;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 88px;
+  }
+  
+  .text-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    position: relative; 
+    border-top: 1px solid #8787879c;
+  }
+
+  .tag{
+    border-radius: 10px;
+    color: white;
+    background-color: #9292926a;
+    border: 1px solid #8787879c;
+    margin-top: 20px;
+  }
+
+  .tag h2{
+    margin-left: 19px;
+  }
+
 .tag span{
     color: cyan;
   }
