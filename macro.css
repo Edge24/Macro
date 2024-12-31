@@ -108,6 +108,7 @@ body {
 
       .fox:hover{
         border-color: cyan;
+        color: white;
       }
 
       #searchBox {
@@ -125,6 +126,7 @@ body {
       /* Highlighting */
       .highlight {
         background-color: red;
+        color: white;
     }
 
     .btn {
