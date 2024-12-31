@@ -126,7 +126,6 @@ body {
       /* Highlighting */
       .highlight {
         background-color: red;
-        color: white;
     }
 
     .btn {
@@ -186,7 +185,7 @@ body {
     margin-left: 19px;
   }
 
-  .tag span{
+  .tag .root{
     color: cyan;
   }
 
