@@ -32,33 +32,39 @@ body {
 /* Navbar styles */
 .navbar {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 95%;
-        background-color: #333;
+        background-color: #9292926a;
+        border: 1px solid #8787879c;
         color: #fff;
-        display: flex;
+        display: block;
+        height: 86%;
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
-        margin: 20px;
+        margin-left: 24px;
         z-index: 1000; /* Ensure it stays above other elements */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        border-radius: 12px;
-        background-color: #1b1b1f72;
+        border-radius: 18px;
         backdrop-filter: blur(10px);
         border: 1px solid rgba(122, 117, 117, 0.632);
       }
       
       .nav-links {
         list-style: none;
-        display: flex;
+        display: block;
         margin: 0;
         padding: 0;
       }
       
       .nav-links li {
-        margin: 0 15px;
+        text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.01s;
+  text-align: left;
       }
       
       .nav-links a {
@@ -67,8 +73,9 @@ body {
         transition: color 0.3s;
       }
       
-      .nav-links a:hover {
-        color: aqua;
+      .nav-links li:hover {
+        background-color: #9292923f;
+        border-radius: 15px;
       }
       
       /* Section styles */
@@ -101,9 +108,13 @@ body {
 
 .fox{
         background-color: #9292923f;
+        color: white;
         border: 1px solid transparent;
-        margin-right: 15px;
-        border-radius: 8px;
+        margin-right: 6px;
+        margin-left: 2px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        margin-top: 8px;
       }
 
       .fox:hover{
@@ -112,15 +123,19 @@ body {
       }
 
       #searchBox {
-        width: 450px;
-        padding: 10px;
+         width: 240px;
+        padding: 20px;
         margin-left: 0px;
-        font-size: 16px;
+        font-size: 18px;
         outline: none;
         border: none;
         transition: border-color 0.3s ease;
-        color: rgb(195, 188, 188);
+        color: white;
         background-color: transparent;
+    }
+
+#searchBox::placeholder{
+      color: rgb(145, 138, 138);
     }
 
       /* Highlighting */
@@ -142,9 +157,9 @@ body {
   }
 
   .btn-primary {
-      color: rgb(111, 110, 110);
+      color: rgb(145, 138, 138);
       background-color: transparent;
-      font-size: 20px;
+      font-size: 24px;
       padding: 9px 12px;
       border-radius: 50px;
       margin-right: 8px;
@@ -155,10 +170,20 @@ body {
     color: white;
   }
 
+   .parent{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 40px;
+  }
+
   .container {
-    width: 80%;
-    max-width: 800px;
-    margin-top: 88px;
+    width: 100%;
+  }
+
+  .right{
+    width: 100%;
   }
   
   .text-block {
@@ -174,11 +199,14 @@ body {
   }
 
   .tag{
-    border-radius: 10px;
+    border-radius: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
     color: white;
     background-color: #9292926a;
     border: 1px solid #8787879c;
-    margin-top: 20px;
+    margin-bottom: 32px;
+    margin-left: 60px;
   }
 
   .tag h2{
@@ -208,11 +236,14 @@ body {
   }
 
   .tag{
-    border-radius: 10px;
+    border-radius: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
     color: white;
     background-color: #9292926a;
     border: 1px solid #8787879c;
-    margin-top: 20px;
+    margin-bottom: 32px;
+    margin-left: 60px;
   }
 
   .tag h2{
@@ -293,22 +324,26 @@ body {
 }
 
 
-  footer {
-        text-align: center;
-        padding: 3px;
+ footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
         color: white;
-         left: 0;
-         bottom: 0;
-         width: 100%;
+         width: 85%;
          margin-top: 50px;
+         margin-left: 56px;
+         font-size: 20px;
       }
       
       footer span{
         color: aqua;
       }
+
+      .version{
+        text-align: left;
+      }
       
       .credit{
-        text-align: center;
-        padding: 9px;
+        text-align: right;
       }
   
