@@ -15,6 +15,9 @@ body {
         color: #000;
         background: #fff;
       }
+
+
+
       
       ::-webkit-scrollbar{
         width: 6px;
@@ -29,6 +32,8 @@ body {
         border-radius: 20px;
       }
 
+
+      
 /* Navbar styles */
 .navbar {
         position: fixed;
@@ -107,7 +112,7 @@ body {
         }
       }
 
-.fox{
+      .fox{
         background-color: #9292923f;
         color: white;
         border: 1px solid transparent;
@@ -120,11 +125,10 @@ body {
 
       .fox:hover{
         border-color: cyan;
-        color: white;
       }
 
       #searchBox {
-         width: 240px;
+        width: 240px;
         padding: 20px;
         margin-left: 0px;
         font-size: 18px;
@@ -135,13 +139,13 @@ body {
         background-color: transparent;
     }
 
-#searchBox::placeholder{
-      color: rgb(145, 138, 138);
-    }
-
       /* Highlighting */
       .highlight {
         background-color: red;
+    }
+
+    #searchBox::placeholder{
+      color: rgb(145, 138, 138);
     }
 
     .btn {
@@ -171,7 +175,7 @@ body {
     color: white;
   }
 
-   .parent{
+  .parent{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-left: 90px;
@@ -216,28 +220,6 @@ body {
 
   .tag .root{
     color: cyan;
-  }
-
-  .container {
-    width: 80%;
-    max-width: 800px;
-    margin-top: 88px;
-  }
-  
-  .text-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 10px;
-    padding: 10px;
-    background-color: transparent;
-    color: white;
-    position: relative; 
-    border-top: 1px solid #8787879c;
-  }
-
-  .tag h2{
-    margin-left: 19px;
   }
   
   .text {
@@ -294,10 +276,10 @@ body {
 	height:65px;
 	bottom:145px;
 	right:40px;
-  	padding: 4px;
-  	color: white;
-  	background-color: #9292926a;
-  	border: 1px solid #8787879c;
+  padding: 4px;
+  color: white;
+  background-color: #9292926a;
+  border: 1px solid #8787879c;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -314,7 +296,7 @@ body {
 }
 
 
- footer {
+  footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 20px;
@@ -336,4 +318,7 @@ body {
       .credit{
         text-align: right;
       }
+
+
+
   
