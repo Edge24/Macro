@@ -296,18 +296,15 @@ body {
 }
 
 
-  footer {
+#footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         padding: 20px;
         color: white;
-         width: 85%;
-         margin-top: 50px;
-         margin-left: 56px;
          font-size: 20px;
       }
       
-      footer span{
+      .credit span{
         color: aqua;
       }
 
@@ -318,7 +315,9 @@ body {
       .credit{
         text-align: right;
       }
-
+ 
+      
+     
 
 
   
