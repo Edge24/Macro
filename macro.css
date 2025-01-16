@@ -44,7 +44,7 @@ body {
         height: 86%;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
+        padding: 8px 6px;
         margin-left: 24px;
         z-index: 1000; /* Ensure it stays above other elements */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -117,7 +117,7 @@ body {
         color: white;
         border: 1px solid transparent;
         margin-right: 6px;
-        margin-left: 2px;
+        margin-left: 4px;
         border-radius: 12px;
         margin-bottom: 30px;
         margin-top: 8px;
@@ -128,7 +128,7 @@ body {
       }
 
       #searchBox {
-        width: 240px;
+	width: 210px;
         padding: 20px;
         margin-left: 0px;
         font-size: 18px;
