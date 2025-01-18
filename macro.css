@@ -37,6 +37,7 @@ body {
 /* Navbar styles */
 .navbar {
         position: fixed;
+	/*background: linear-gradient(to top, rgba(0, 57, 0, 0.849), rgba(171, 171, 171, 0.804), rgba(192, 28, 2, 0.836));*/
         background-color: #9292926a;
         border: 1px solid #8787879c;
         color: #fff;
@@ -62,8 +63,8 @@ body {
       
       .nav-links li {
   text-decoration: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 50px;
   font-size: 25px;
   color: #ffffff;
@@ -295,13 +296,67 @@ body {
   border: 1px solid aqua;
 }
 
+.float-sheet{
+  position:fixed;
+	width:65px;
+	height:65px;
+	bottom:254px;
+	right:40px;
+  padding: 4px;
+  color: white;
+  background-color: #9292926a;
+  border: 1px solid #8787879c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
 
-#footer {
+.float-sheet i{
+  margin-top: 12px;
+  margin-left: 0.8px;
+  font-size: 45px;
+}
+
+.float-sheet:hover{
+  border: 1px solid aqua;
+}
+
+.float-photo{
+  position:fixed;
+	width:65px;
+	height:65px;
+	bottom:364px;
+	right:40px;
+  padding: 4px;
+  color: white;
+  background-color: #9292926a;
+  border: 1px solid #8787879c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+
+.float-photo i{
+  margin-top: 12px;
+  margin-left: 0.8px;
+  font-size: 45px;
+}
+
+.float-photo:hover{
+  border: 1px solid aqua;
+}
+
+
+
+
+  #footer {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        padding: 20px;
+        padding: 0px;
         color: white;
          font-size: 20px;
+         border: transparent;
+         background-color: transparent;
       }
       
       .credit span{
@@ -315,7 +370,12 @@ body {
       .credit{
         text-align: right;
       }
- 
+
+
+
+  
+
+    
       
      
 
