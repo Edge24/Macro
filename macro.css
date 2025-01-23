@@ -37,8 +37,8 @@ body {
 /* Navbar styles */
 .navbar {
         position: fixed;
-	background: linear-gradient(to top, rgba(0, 57, 0, 0.849), rgba(171, 171, 171, 0.804), rgba(192, 28, 2, 0.836));
-        /*background-color: #9292926a;*/
+	/*background: linear-gradient(to top, rgba(0, 57, 0, 0.849), rgba(171, 171, 171, 0.804), rgba(192, 28, 2, 0.836));*/
+        background-color: #9292926a;
         border: 1px solid #8787879c;
         color: #fff;
         display: block;
